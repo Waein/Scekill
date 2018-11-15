@@ -2,7 +2,7 @@
 
 ### 开发工具
 
-idea  2017.2
+idea  2017.7
 
 ### 开发环境
 
@@ -12,17 +12,17 @@ idea  2017.2
 
 ### 项目启动说明
 
-1、启动前，请配置 application.properties 中相关redis、mysql、rabbitmq地址。
+1、启动前，请配置 application.properties 中相关redis、mysql、rabbitmq地址以及代码中文件地址。 
 
-2、登录地址：http://localhost:8888/page/login   
+2、登录地址：http://localhost:8888/user/login/page   
 
 3、商品秒杀列表地址：http://localhost:8888/goods/list
 
 ### 其它说明
 
-1、数据库共有一千个用户左右（手机号：从18077200000~18077200998 密码为：123456），为压测准备的。（使用 cn.hfbin.seckill.util.UserUtil.java该类生成的，生成token做压测也是在此类里面）
+1、sql执行完数据库共有一千个用户左右（手机号：从18077200000~18077200998 密码为：123456），为压测准备的。（使用 com.waein.seckill.util.UserUtil.java该类生成的，生成token做压测也是在此类里面）
 
-2、此项目共有两个分支，master分支只是完成了秒杀的所有业务逻辑功能，并没有优化。V2.0分支做了优化如下：
+2、此项目完成了秒杀的所有业务逻辑功能，并优化以下几个模块：
 
     1)、页面缓存、商品详情静态化、订单静态化（感兴趣可以把所有页面都做静态化）
     2)、加入消息队列RabbitMQ，对秒杀接口进行优化。
@@ -40,5 +40,4 @@ idea  2017.2
 订单详情页
 ![123](img/4.png)
 
- 博客地址：https://blog.csdn.net/qq_33524158
 
